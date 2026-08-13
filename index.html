@@ -20,7 +20,7 @@
       <nav class="nav">
          <ul class="nav__list">
             <li>
-               <a href="#home" title="Home" class="nav__link">
+               <a href="#home" title="Home" class="nav__link active-link">
                   <i class="ri-home-4-line"></i>
                </a>
             </li>
@@ -61,11 +61,11 @@
                   <img src="assets/img/home-perfil.png" alt="image" class="perfil__img">
                   
                   <div class="perfil__data">
-                     <h1 class="perfil__name"> Candra <br> Monika </h1>
+                     <h1 class="perfil__name"> Candra Monika </h1>
 
                      <div class="perfil__buttons">
-                        <a href="skills" class="button">Skills</a>
-                        <a href="achievements" class="button button__pink">Achievements</a>
+                        <a href="achievements" class="button">Achievements</a>
+                        <a href="projects" class="button button__pink">Projects</a>
                      </div>
                   </div>
                </div>
@@ -74,38 +74,33 @@
                <div class="info">
                   <div class="info__data">
                      <div class="info__circle"></div>
-                     <h1 class="info__name">Candra Monika</h1>
+                     <h1 class="info__name">Biografi Singkat</h1>
                   </div>
 
                   <div class="info__image">
                      <img src="assets/img/about-perfil.png" alt="image" class="info__img">
                   </div>
 
-                  <div class="about__social">
-                     <a href="https://www.instagram.com/candramonikaa_?igsh=ODVzN24yeG1qMGdj&utm_source=qr" target="_blank" class="about__link">
-                        <i class="ri-instagram-line"></i>
-                     </a>
-                  </div>
-
                   <p class="info__description">
                      Saya Ni Komang Candra Monika Sari, mahasiswi Sistem Informasi di kampus ITB STIKOM Bali
                      yang berminat pada bidang desain digital dan teknologi informasi. Selama perkuliahan,
                      berbagai proyek telah saya kerjakan dengan memanfaatkan Figma, Canva, Microsoft 365,
-                     dan Google Workspace. Dengan memiliki karakter yang teliti, adaptif, dan senang
-                     mempelajari hal baru, saya terus berupaya mengembangkan kemampuan serta menambah
-                     pengalaman di bidang IT. Siap menghadapi tantangan baru, bekerja sama dalam tim, dan
-                     memberikan kontribusi positif di lingkungan kerja.
+                     dan Google Workspace.
+                     Dengan memiliki karakter yang teliti, adaptif, dan senang mempelajari hal baru, saya 
+                     erus berupaya mengembangkan kemampuan serta menambah pengalaman di bidang IT. Siap
+                     menghadapi tantangan baru, bekerja sama dalam tim, dan memberikan kontribusi positif
+                     di lingkungan kerja.
                   </p>
 
                   <div class="info__buttons">
                      <a href="assets/pdf/CandraMonika-Cv.pdf" download target="_blank" class="button button__pink">Download CV</a>
-                     <a href="#contact" class="button">Contact Me</a>
                   </div>
                </div>
 
                <!--===== SKILLS =====-->
-               <div class="skills">
-                  <h2 class="skills__tittle">Skills</h2>
+               <section class="skills section" id="skills">
+                  <div class="skills__container container grid"></div>
+                  <h2 class="skills__title">Skills</h2>
                      
                      <div class="skills__items">
                         <img src="assets/img/skills-figma.svg" alt="image" class="skills__item">
@@ -118,11 +113,16 @@
                         <img src="assets/img/skills-docs.svg" alt="image" class="skills__item">
                         <img src="assets/img/skills-forms.svg" alt="image" class="skills__item">
                         <img src="assets/img/skills-slide.svg" alt="image" class="skills__item">
+                </section>
             </div>
          </section>
 
          <!--==================== ACHIEVEMENTS ====================-->
          <section class="achievements section" id="achievements">
+            <div class="achievements__container container grid"></div>
+            <div class="achievements__data"></div>
+            <h2 class="section__title">ACHIEVEMENTS</h2>
+
             <div class="achievements__items">
                <img src="assets/img/achievement-1.png" alt="Achievement 1" onclick="openCertificate(this)">
                <img src="assets/img/achievement-2.png" alt="Achievement 2" onclick="openCertificate(this)">
@@ -152,7 +152,7 @@
                       </h3>
 
                      <p class="projects__description">
-                        adalah pokoknya
+                        Tugas Desain Poster dengan Tema Kesehatan saat Kelas 11 SMA
                      </p>
                   </div>
                </article>
@@ -167,7 +167,7 @@
                   <div class="projects__data">
                      <h3 class="project__name">Web Pembelajaran Interaktif</h3>
                      <p class="projects__description">
-                        adalah pokoknya
+                        Tugas Web Pembelajaran Interaktif dengan Judul "EduMedia" saat Semester 3
                      </p>
 
                   </div>
@@ -181,7 +181,7 @@
                   <div class="projects__data">
                      <h3 class="project__name">Desain UI/UX Tema Pendidikan</h3>
                      <p class="projects__description">
-                        adalah pokoknya
+                        Tugas Desain UI/UX dengan Tema Pendidikan saat Semester 3
                      </p>
 
                   </div>
@@ -195,7 +195,7 @@
                   <div class="projects__data">
                      <h3 class="project__name">Desain Prototype Halaman Pembayaran MOVA</h3>
                      <p class="projects__description">
-                        adalah pokoknya
+                        Tugas Desain Protoype Halaman Pembayaran MOVA saat Semester 4
                      </p>
                   </div>
                </article>
@@ -222,7 +222,7 @@
 
                   <button type="submit" class="button contact__button">Send Message</button>
 
-                  <p class="contact__message" id="contact-message">Message</p>
+                  <p class="contact__message" id="contact-message"></p>
                </form>
             </div>
          </section>
@@ -230,17 +230,48 @@
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="'footer__container container grid">
+            <div class="footer__content grid">
+               <a href="#" class="footer__logo">Candra Monika</a>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="#home" class="footer__link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#achievements" class="footer__link">Achievements</a>
+                  </li>
+
+                  <li>
+                     <a href="#project" class="footer__link">Projects</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="footer__social">
+               <a href="https://www.instagram.com/candramonikaa_?igsh=ODVzN24yeG1qMGdj&utm_source=qr" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+            </div>
+         </div>
+
+         <span class="footer__copy">
+            &#169; 2026 Candra Monika. All rights reserved.
+         </span>
       </footer>
 
-      <!--========== SCROLL UP ==========-->
 
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-double-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
-      <script src=""></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
