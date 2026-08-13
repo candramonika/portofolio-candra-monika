@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Portofolio Candra Monika</title>
+   </head>
+   <body>
+      <!--==================== NAV ====================-->
+      <nav class="nav">
+         <ul class="nav__list">
+            <li>
+               <a href="#home" title="Home" class="nav__link">
+                  <i class="ri-home-4-line"></i>
+               </a>
+            </li>
+            
+            <li>
+               <a href="#skills" title="Skills" class="nav__link">
+                  <i class="ri-brain-line"></i>
+               </a>
+            </li>
+
+            <li>
+               <a href="#achievements" title="Achievements" class="nav__link">
+                  <i class="ri-honour-line"></i>
+               </a>
+            </li>
+
+            <li>
+               <a href="#project" title="Project" class="nav__link">
+                   <i class="ri-folder-6-line"></i>
+               </a>
+            </li>
+
+            <li>
+               <a href="#contact" title="Contact" class="nav__link">
+                  <i class="ri-mail-send-line"></i>
+               </a>
+            </li>
+         </ul>
+      </nav>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <!--===== PERFIL =====-->
+               <div class="perfil">
+                  <img src="assets/img/home-perfil.png" alt="image" class="perfil__img">
+                  
+                  <div class="perfil__data">
+                     <h1 class="perfil__name"> Candra <br> Monika </h1>
+
+                     <div class="perfil__buttons">
+                        <a href="skills" class="button">Skills</a>
+                        <a href="achievements" class="button button__pink">Achievements</a>
+                     </div>
+                  </div>
+               </div>
+
+               <!--===== INFO =====-->
+               <div class="info">
+                  <div class="info__data">
+                     <div class="info__circle"></div>
+                     <h1 class="info__name">Candra Monika</h1>
+                  </div>
+
+                  <div class="info__image">
+                     <img src="assets/img/about-perfil.png" alt="image" class="info__img">
+                  </div>
+
+                  <div class="about__social">
+                     <a href="https://www.instagram.com/candramonikaa_?igsh=ODVzN24yeG1qMGdj&utm_source=qr" target="_blank" class="about__link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+
+                  <p class="info__description">
+                     Saya Ni Komang Candra Monika Sari, mahasiswi Sistem Informasi di kampus ITB STIKOM Bali
+                     yang berminat pada bidang desain digital dan teknologi informasi. Selama perkuliahan,
+                     berbagai proyek telah saya kerjakan dengan memanfaatkan Figma, Canva, Microsoft 365,
+                     dan Google Workspace. Dengan memiliki karakter yang teliti, adaptif, dan senang
+                     mempelajari hal baru, saya terus berupaya mengembangkan kemampuan serta menambah
+                     pengalaman di bidang IT. Siap menghadapi tantangan baru, bekerja sama dalam tim, dan
+                     memberikan kontribusi positif di lingkungan kerja.
+                  </p>
+
+                  <div class="info__buttons">
+                     <a href="assets/pdf/CandraMonika-Cv.pdf" download target="_blank" class="button button__pink">Download CV</a>
+                     <a href="#contact" class="button">Contact Me</a>
+                  </div>
+               </div>
+
+               <!--===== SKILLS =====-->
+               <div class="skills">
+                  <h2 class="skills__tittle">Skills</h2>
+                     
+                     <div class="skills__items">
+                        <img src="assets/img/skills-figma.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-canva.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-word.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-excel.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-powerpoint.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-drive.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-spreadsheet.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-docs.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-forms.svg" alt="image" class="skills__item">
+                        <img src="assets/img/skills-slide.svg" alt="image" class="skills__item">
+            </div>
+         </section>
+
+         <!--==================== ACHIEVEMENTS ====================-->
+         <section class="achievements section" id="achievements">
+            <div class="achievements__items">
+               <img src="assets/img/achievement-1.png" alt="Achievement 1" onclick="openCertificate(this)">
+               <img src="assets/img/achievement-2.png" alt="Achievement 2" onclick="openCertificate(this)">
+               <img src="assets/img/achievement-3.png" alt="Achievement 3" onclick="openCertificate(this)">
+               <img src="assets/img/achievement-4.png" alt="Achievement 4" onclick="openCertificate(this)">
+            </div>
+
+            <div id="certificateModal" class="modal" onclick="closeCertificate(event)">
+               <span class="close" onclick="closeCertificate()">x</span>
+               <img id="modalImage" src="" alt="Certificate" onclick="event.stopPropagation()">
+            </div>
+         </section>
+
+         <!--==================== PROJECT ====================-->
+         <section class="projects section" id="project">
+            <h2 class="section__title">RECENT PROJECT</h2>
+            <div class="projects__container container grid">
+
+               <article class="project__card">
+                  <div class="projects__image" onclick="openProject(this.querySelector('.projects__img'))">
+                     <img src="assets/img/projects-1.png" alt="Desain Poster Kesehatan" class="projects__img" onclick="openProjects(this)">
+                  </div>
+
+                  <div class="projects__data">
+                     <h3 class="project__name">
+                        Desain Poster Kesehatan
+                      </h3>
+
+                     <p class="projects__description">
+                        adalah pokoknya
+                     </p>
+                  </div>
+               </article>
+
+
+               <article class="project__card">
+                     <a href="https://view.genially.com/691159244fbda821c2c000d2/interactive-content-edumedia" target="_blank" class="projects__link">
+                        <img src="assets/img/projects-2.png" alt="image" class="projects__img">
+                     </a>
+                  
+
+                  <div class="projects__data">
+                     <h3 class="project__name">Web Pembelajaran Interaktif</h3>
+                     <p class="projects__description">
+                        adalah pokoknya
+                     </p>
+
+                  </div>
+               </article>
+
+               <article class="project__card">
+                  <a href="https://www.figma.com/design/vcNmpTPCpOtEfefB7l4kbr/240030432_Pendidikan" target="_blank" class="projects__link">
+                     <img src="assets/img/projects-3.jpg" alt="image" class="projects__img">
+                  </a>
+
+                  <div class="projects__data">
+                     <h3 class="project__name">Desain UI/UX Tema Pendidikan</h3>
+                     <p class="projects__description">
+                        adalah pokoknya
+                     </p>
+
+                  </div>
+               </article>
+
+               <article class="project__card">
+                  <a href="https://www.figma.com/design/5JJOzU3RBxWAC8b8zgVlim/Untitled" target="_blank" class="projects__link">
+                     <img src="assets/img/projects-4.png" alt="image" class="projects__img">
+                  </a>
+
+                  <div class="projects__data">
+                     <h3 class="project__name">Desain Prototype Halaman Pembayaran MOVA</h3>
+                     <p class="projects__description">
+                        adalah pokoknya
+                     </p>
+                  </div>
+               </article>
+
+               <div id="projectModal" class="modal">
+                  <span class="close" onclick="closeProject()">x</span>
+                  <img id="projectModalImage" src="" alt="">
+               </div>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">CONTACK ME</h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form grid" id="contact-form">
+                  <div class="contact__group grid">
+                     <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                     <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                  </div>
+
+                  <textarea name="user_message" placeholder="Message" class="contact__input contact__area"></textarea>
+
+                  <button type="submit" class="button contact__button">Send Message</button>
+
+                  <p class="contact__message" id="contact-message">Message</p>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src=""></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
