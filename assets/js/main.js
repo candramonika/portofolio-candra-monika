@@ -17,19 +17,6 @@ function closeCertificate(event) {
 
 
 /*=============== PROJECTS ===============*/ 
-function openProjects(img) {
-  const modal = document.getElementById("projectModal");
-  const modalImage = document.getElementById("projectModalImage");
-
-  modal.style.display = "flex";
-  modalImage.src = img.src;
-}
-
-function closeProject() {
-  const modal = document.getElementById("projectModal");
-
-  modal.style.display = "none";
-}
 
 
 /*=============== EMAIL JS ===============*/
