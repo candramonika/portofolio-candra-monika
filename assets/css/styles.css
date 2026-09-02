@@ -195,11 +195,9 @@ img {
 
 .perfil__img{
   position: absolute;
-  height: 100%;
-  width: auto;
-  width: 400px;
+  height: auto;
+  width: 250px;
   object-fit: contain;
-  max-width: 100%;
   justify-self: center;
   align-self: flex-end;
 }
