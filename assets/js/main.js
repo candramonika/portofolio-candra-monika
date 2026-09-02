@@ -81,11 +81,12 @@ const sr = ScrollReveal({
 
 sr.reveal('.perfil, .contact__form')
 sr.reveal('.info', {origin: 'left', delay: 800})
-sr.reveal('.skills', {origin: 'right', delay: 800})
+sr.reveal('.skills', {origin: 'right', delay: 400})
 sr.reveal('.experience', {origin: 'right', delay: 800})
-sr.reveal('.achievements', {origin: 'top', delay: 800})
-sr.reveal('.projects', {interval: 1000})
+sr.reveal('.achievements', {origin: 'top', delay: 900})
+sr.reveal('.projects', {origin: 'top', delay: 1000})
 sr.reveal('.contact .section__title', {
   origin: 'top',
   delay: 400
 })
+sr.reveal('.footer', {interval: 1000})
