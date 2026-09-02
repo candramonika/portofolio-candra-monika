@@ -186,7 +186,7 @@ img {
 .perfil{
   position: relative;
   background: var(--first-color-alt);
-  height: 497 / 1006;
+  height: 420px;
   border-radius: 2rem;
   padding: 1rem;
   display: grid;
@@ -214,7 +214,7 @@ img {
   border: 2px solid hsla(0, 0%, 100%, .5);
   display: grid;
   justify-self: center;
-  width: auto;
+  width: calc(100% - .5rem);
 }
 
 .perfil__name{
