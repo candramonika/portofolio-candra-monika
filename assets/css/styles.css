@@ -657,6 +657,13 @@ img {
   }
 }
 
+@media screen and (max-width: 767px){
+  .perfil__name{
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+}
+
 /* For large devices */
 @media screen and (min-width: 1200px){
   .container{
