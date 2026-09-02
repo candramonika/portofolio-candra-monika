@@ -195,7 +195,7 @@ img {
 
 .perfil__img{
   position: absolute;
-  height: auto;
+  height: 100%;
   width: 250px;
   object-fit: contain;
   justify-self: center;
