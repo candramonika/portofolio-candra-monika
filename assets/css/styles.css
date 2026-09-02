@@ -173,7 +173,7 @@ img {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  transition: background-color.6s;
+  transition: background-color.3s ease;
 }
 
 /* Active link */
