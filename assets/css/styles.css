@@ -326,14 +326,15 @@ img {
 /*===== SKILLS =====*/
 .skills{
   border-radius: 2rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
+  padding: 2rem 1.5rem;
+  margin-bottom: .5rem;
   background-color: hsla(348, 58%, 83%, 0.2);
 }
 
 .skills__title{
   font-size: var(--h2-font-size);
   -webkit-text-fill-color: var(--first-color);
+  margin-bottom: 2rem;
 }
 
 .skills__item{
@@ -693,7 +694,7 @@ img {
   }
 
   .home__container{
-    grid-template-columns: 300px 540px 340px;
+    grid-template-columns: 300px 540px 300px;
     align-items: start;
   }
 
